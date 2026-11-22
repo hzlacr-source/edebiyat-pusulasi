@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Edebiyat Pusulası hakkında görüş ve önerilerinizi iletin.">
+  <title>İletişim — Edebiyat Pusulası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#ana-icerik">Ana içeriğe geç</a>
+  <header class="site-header"><div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Edebiyat Pusulası ana sayfa"><span class="brand-mark" aria-hidden="true">E</span><span>Edebiyat <em>Pusulası</em></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç" aria-controls="site-nav">☰</button>
+    <nav class="site-nav" id="site-nav" aria-label="Ana gezinme">
+      <a class="nav-link" href="index.html">Ana Sayfa</a><a class="nav-link" href="icerikler.html">İçerikler</a><a class="nav-link" href="yazarlar.html">Yazarlar</a>
+      <a class="nav-link" href="turler.html">Türler</a><a class="nav-link" href="unlu-cumleler.html">Yazar Alıntıları</a><a class="nav-link" href="okuma-listem.html">Okuma Listem</a><a class="nav-link" href="hakkinda.html">Hakkında</a><a class="nav-link active" aria-current="page" href="iletisim.html">İletişim</a>
+      <form class="nav-search" action="icerikler.html" role="search"><label class="visually-hidden" for="site-search">Kitap veya yazar ara</label><input id="site-search" name="q" type="search" placeholder="Kitap veya yazar ara" autocomplete="off"><button class="nav-search-clear" type="button" aria-label="Temizle" hidden>×</button><button type="submit" aria-label="Ara">⌕</button></form>
+    </nav>
+  </div></header>
+  <main id="ana-icerik">
+    <section class="content-hero page-width"><p class="eyebrow"><span class="eyebrow-line"></span> BİZE ULAŞ</p><h1>Bir cümlen var mı?<span>.</span></h1><p>Okuma önerilerini, düzeltmeleri ve Edebiyat Pusulası hakkındaki görüşlerini paylaşabilirsin.</p></section>
+    <section class="page-width contact-layout" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <p class="eyebrow">GÖRÜŞ VE ÖNERİLER</p>
+        <h2 id="contact-title">Her güzel öneri yeni bir rota çizer.</h2>
+        <p>Okuma önerilerini, düzeltmeleri ya da Edebiyat Pusulası hakkındaki düşüncelerini paylaş.</p>
+        <p class="contact-note">Bu sayfada bir gönderim sunucusu bulunmadığı için form, e-posta uygulamanda doldurulmuş bir taslak açar. Taslağa alıcı adresini ekleyip gönderebilirsin.</p>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="contact-form-row">
+          <div class="contact-field">
+            <label for="contact-name">Adın</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Adını yaz" required>
+          </div>
+          <div class="contact-field">
+            <label for="contact-email">E-posta adresin <span>(isteğe bağlı)</span></label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="ornek@eposta.com">
+          </div>
+        </div>
+        <div class="contact-field">
+          <label for="contact-subject">Konu</label>
+          <select id="contact-subject" name="subject">
+            <option value="Kitap önerisi">Kitap önerisi</option>
+            <option value="Düzeltme">Düzeltme</option>
+            <option value="Genel görüş">Genel görüş</option>
+          </select>
+        </div>
+        <div class="contact-field">
+          <label for="contact-message">Mesajın</label>
+          <textarea id="contact-message" name="message" rows="6" placeholder="Aklındaki öneriyi veya düşünceyi yaz..." required></textarea>
+        </div>
+        <button class="button button-dark contact-submit" type="submit">E-posta taslağı oluştur <span aria-hidden="true">↗</span></button>
+        <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="page-width footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">E</span><span>Edebiyat <em>Pusulası</em></span></a><p>Bir sonraki güzel cümleye doğru.</p><span>© 2026 Edebiyat Pusulası</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

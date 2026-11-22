@@ -14,13 +14,25 @@
   <a class="skip-link" href="#ana-icerik">Ana içeriğe geç</a>
   <header class="site-header"><div class="nav-wrap">
     <a class="brand" href="index.html" aria-label="Edebiyat Pusulası ana sayfa"><span class="brand-mark" aria-hidden="true">E</span><span>Edebiyat <em>Pusulası</em></span></a>
-    <nav class="site-nav" aria-label="Ana gezinme"><a class="nav-link" href="index.html">Ana Sayfa</a><a class="nav-link" href="icerikler.html">İçerikler</a><a class="nav-link active" aria-current="page" href="hakkinda.html">Hakkında</a></nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç" aria-controls="site-nav">☰</button>
+    <nav class="site-nav" id="site-nav" aria-label="Ana gezinme">
+      <a class="nav-link" href="index.html">Ana Sayfa</a><a class="nav-link" href="icerikler.html">İçerikler</a>
+      <a class="nav-link" href="yazarlar.html">Yazarlar</a><a class="nav-link" href="turler.html">Türler</a><a class="nav-link" href="unlu-cumleler.html">Yazar Alıntıları</a>
+      <a class="nav-link" href="okuma-listem.html">Okuma Listem</a><a class="nav-link active" aria-current="page" href="hakkinda.html">Hakkında</a><a class="nav-link" href="iletisim.html">İletişim</a>
+      <form class="nav-search" action="icerikler.html" role="search">
+        <label class="visually-hidden" for="site-search">Kitap veya yazar ara</label>
+        <input id="site-search" name="q" type="search" placeholder="Kitap veya yazar ara" autocomplete="off">
+        <button class="nav-search-clear" type="button" aria-label="Temizle" hidden>×</button>
+        <button type="submit" aria-label="Ara">⌕</button>
+      </form>
+    </nav>
   </div></header>
   <main id="ana-icerik">
     <section class="about-hero page-width"><div><p class="eyebrow"><span class="eyebrow-line"></span> HİKÂYEMİZ</p><h1>Bir kitaba<br><span>yaklaşmanın</span><br>başka bir yolu.</h1></div><div class="about-aside"><span class="aside-asterisk" aria-hidden="true">✳</span><p>İyi bir okuma önerisi, yalnızca kitabın konusunu değil; okurda açabileceği kapıyı da anlatır.</p></div></section>
-    <section class="about-main page-width"><div class="about-image" role="img" aria-label="Kitap sayfalarını ve edebiyatın farklı dünyalarını simgeleyen soyut illüstrasyon"><div class="about-circle circle-one"></div><div class="about-circle circle-two"></div><div class="about-quote-mark">“</div><div class="about-image-caption">OKUMAK, DÜNYAYI<br>BAŞKA GÖZLERLE GÖRMEKTİR.</div></div><div class="about-copy"><p class="eyebrow">NEDEN EDEBİYAT?</p><h2>Çünkü her hikâye<br>bir iz bırakır.</h2><p>Edebiyatı seçtim; çünkü kitaplar insanı, toplumu ve dünyayı anlamanın farklı yollarını sunuyor. Bazen bir karakterin kararı, kendi düşüncelerimize ayna tutuyor; bazen de başka bir döneme ya da yaşama yaklaşmamızı sağlıyor.</p><p>Bu rehberde beş farklı eseri yazar, tür ve kişisel okur notlarıyla bir araya getirdim. Amacım kitapların yerini tutmak değil; ilk merakı uyandırmak ve okuma listen için sana bir başlangıç noktası vermek.</p><a class="button button-dark" href="icerikler.html">Okuma rotasına geç <span aria-hidden="true">↗</span></a></div></section>
+    <section class="about-main page-width"><div class="about-image" role="img" aria-label="Kitap sayfalarını ve edebiyatın farklı dünyalarını simgeleyen soyut illüstrasyon"><div class="about-circle circle-one"></div><div class="about-circle circle-two"></div><div class="about-quote-mark">“</div><div class="about-image-caption">OKUMAK, DÜNYAYI<br>BAŞKA GÖZLERLE GÖRMEKTİR.</div></div><div class="about-copy"><p class="eyebrow">NEDEN EDEBİYAT?</p><h2>Çünkü her hikâye<br>bir iz bırakır.</h2><p>Edebiyatı seçtim; çünkü kitaplar insanı, toplumu ve dünyayı anlamanın farklı yollarını sunuyor. Bazen bir karakterin kararı, kendi düşüncelerimize ayna tutuyor; bazen de başka bir döneme ya da yaşama yaklaşmamızı sağlıyor.</p><p>Bu rehberde yüz farklı eseri yazar, tür ve kişisel okur notlarıyla bir araya getirdim. Amacım kitapların yerini tutmak değil; ilk merakı uyandırmak ve okuma listen için sana bir başlangıç noktası vermek.</p><a class="button button-dark" href="icerikler.html">Okuma rotasına geç <span aria-hidden="true">↗</span></a></div></section>
     <section class="about-values"><div class="page-width values-grid"><div><span>01</span><h3>Keşfet</h3><p>Tür ve yazar bilgileriyle sana yakın gelebilecek eserleri tanı.</p></div><div><span>02</span><h3>Karşılaştır</h3><p>Farklı anlatıların hangi sorulara ve dünyalara açıldığını gör.</p></div><div><span>03</span><h3>Seç</h3><p>Başlıklara göre ara ve kendi okuma rotana nereden başlayacağına karar ver.</p></div></div></section>
   </main>
   <footer class="site-footer"><div class="page-width footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">E</span><span>Edebiyat <em>Pusulası</em></span></a><p>Bir sonraki güzel cümleye doğru.</p><span>© 2026 Edebiyat Pusulası</span></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
